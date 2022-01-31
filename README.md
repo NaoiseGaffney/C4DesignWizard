@@ -14,3 +14,12 @@ pip3 install gunicorn
 pip3 install certifi
 pip3 install flask-mongo-sessions
 pip3 install requests
+
+## Environment Setup
+.env file with all environment variables for the local environment
+
+## CD/CI Pipeline on GitHub and Heroku
+### Local Environment Preparation
+.slugignore to ensure the documentation folder isn't uploaded to Heroku.
+Procfile to run gunicorn as web server on Heroku.
+pip3 freeze > requirements.txt
